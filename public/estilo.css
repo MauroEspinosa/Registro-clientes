@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F3F3F3;
+  font-family: 'Roboto', sans-serif;
+  color: #5F5C5C;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------HEADER--------*/
+div#cabezera{
+  background-color: #5F5C5C;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-box-shadow: 1px 3px 15px 0px rgba(128,124,128,1);
+  -moz-box-shadow: 1px 3px 15px 0px rgba(128,124,128,1);
+  box-shadow: 1px 3px 15px 0px rgba(128,124,128,1);
+}
+
+ul#menu{
+  padding: 0;
+  margin-right: 15px;
+}
+
+ul#menu li{
+ color: #D6D3D3;
+ list-style-type: none;
+ float: left;
+ font-family: 'Roboto', sans-serif;
+}
+
+ul#menu li:hover{
+ text-decoration: underline;
+ color: #F0EEEE;
+ transition: color 0.5s;
+}
+
+ul#menu li:first-child{
+ margin-right: 20px;
+}
+
+/*--------REGISTRO-------*/
+h4{
+  margin: 10px;
+}
+
+h3#descripcion{
+  width: 80%;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#datos{
+  width: 80%;
+  margin: auto;
+}
+
+div#datos input[type=text], input[type=number] {
+   width: 100%;
+   padding: 0.5%;
+   background-color: #F3F3F3;
+   border: none;
+   border-bottom: 1px solid black;
+   outline: none;
+}
+
+div#datos input[type=submit]{
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+  background-color: #5F5C5C;
+  color: #D6D3D3;
+  cursor: pointer;
+}
+
+/*------------------Consulta-----------------*/
+
+div#datos_cliente{
+  margin-top: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5F5C5C;
+  color: #D6D3D3;
+}
+
+div#datos_cliente h5{
+  padding: 4px;
+  margin: 0;
+}
+
+div#datos_cliente input[type=submit]{
+  margin-left: 75%;
+  cursor: pointer;
+  color: white;
+  background-color: inherit;
+  border: none;
+  border-top: 1px solid white;
+}
+
+div#datos_cliente h5  span.dato{
+  color: white;
+}
+
+div#datos_cliente h5:nth-child(2){
+  border-top: 1px solid #D6D3D3;
+  border-bottom: 1px solid #D6D3D3;
+}
+
+/*------------Buscar----------------*/
+div#buscar{
+  width: 80%;
+  margin:auto;
+  padding: 6px;
+}
+
+div#buscar input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #5F5C5C;
+  background-color: inherit;
+}

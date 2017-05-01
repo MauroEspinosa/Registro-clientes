@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%include head.ejs%>
+</head>
+
+<body>
+<%include header.ejs%>
+<h3 id="descripcion">En esta seccion puedes agregar los datos de tus nuevos clientes</h3>
+<div id="datos">
+<form action="/guardar" method="post" id="new">
+  <h4>Nombre:</h4>
+  <input type="text" name="nombre" style="text-transform:uppercase" onchange="javascript:this.value=this.value.toUpperCase()" required/><br/>
+  <h4>Apellido:</h4>
+  <input type="text" name="apellido" style="text-transform:uppercase" onchange="javascript:this.value=this.value.toUpperCase()" required/><br/>
+  <h4>Edad:</h4>
+  <input type="number" name="edad" min="10" max="90"required/></br/>
+  <input type="submit" value="Guardar">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%include head.ejs%>
+<script>
+$(document).ready(function(){
+
+$("#search").focus(function(){
+  $(this).animate({width: "80%"},300);
+});
+
+});
+</script>
+</head>
+
+<body>
+<%include header.ejs%>
+
+<div id="buscar">
+ <h4><form action="/buscar" method="post">Buscar: <input type="search" name="search" id="search" style="text-transform:uppercase" onchange="javascript:this.value=this.value.toUpperCase()"/></form></h4>
+</div>
+<%for(i=doc.length-1;i>=0;i--){%>
+<div id="datos_cliente">
+ <h5>Nombre: <span class="dato"><%=doc[i].nombre%></span></h5>
+ <h5>Apellidos: <span class="dato"><%=doc[i].apellido%></span></h5>
+ <h5>Edad: <span class="dato"><%=doc[i].edad%></span></h5>
+ <form action="/cliente/<%=doc[i]._id%>" method="POST">
+   <input type="submit" value="Eliminar">
+ </form>
+</div>
+<%}%>
+
+</body>
+</html>
