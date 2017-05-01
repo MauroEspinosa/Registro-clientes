@@ -6,7 +6,7 @@ var path = require ('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
-app.set('views', path.join(process.cwd() +'/views'));
+app.set('views', path.join(process.cwd() +'/Views'));
 app.use(express.static(path.join(process.cwd() + '/public')));
 app.set("view engine", "ejs");
 
